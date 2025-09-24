@@ -781,7 +781,7 @@
 }
 
 body {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Mono',monospace;
     line-height: 1.6;
     background: linear-gradient(135deg, #111112 0%, #48444c 100%);
     min-height: 100vh;
@@ -1707,6 +1707,7 @@ nav {
 
     
  
+
 
 
 
