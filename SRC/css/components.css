@@ -1,6 +1,6 @@
 /* Results Section Styles - No Animations */
 .results-section {
-    background: linear-gradient(135deg, #02071f, #edebef);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     padding: 40px;
     border-radius: 20px;
@@ -600,7 +600,8 @@
     .social-links {
         justify-content: center;
     }
-}50%;
+}
+.general{
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -774,7 +775,7 @@
     }
 }/* Results Section Styles */
 .results-section {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #5ac0de, #aea8b3);
     color: white;
     padding: 30px;
     border-radius: 15px;
