@@ -782,10 +782,10 @@
 
 body {
     font-family: 'Orbitron', 'Exo 2', 'Rajdhani', Rajdhani;
-    line-height: 1.6;
+    line-height: 1.5;
     min-height: 100vh;
-    color: #333;
-    background-image: url(https://cdn.cosmos.so/c5f144f6-c315-4bd5-805d-ef65726d002f?format=jpeg);
+    color: #0f0101;
+    background-image: url(https://i.postimg.cc/xCZySvm2/Gemini-Generated-Image-xnwek3xnwek3xnwe-1.png);
     background-repeat: no-repeat; 
     background-size: cover; 
     background-attachment: fixed;
@@ -857,8 +857,10 @@ nav {
 /* Hero Section - Simplified */
 .hero {
     text-align: center;
+    font-size: 3rem;
+    font-weight:800;
     padding: 6rem 0;
-    color: white;
+    color: rgb(35, 33, 33);
     position: relative;
     min-height: 70vh;
     display: flex;
@@ -875,7 +877,7 @@ nav {
     font-weight: 800;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    background: linear-gradient(45deg, #ffffff, #f8f9ff);
+    background: linear-gradient(45deg, #0c0000, #010317);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1711,7 +1713,6 @@ nav {
 
     
  
-
 
 
 
