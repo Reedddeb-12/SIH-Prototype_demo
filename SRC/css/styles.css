@@ -411,7 +411,7 @@
     
     .main-content {
         background: #2d3748;
-        color: var(--text-primary);
+        color: #101010;
     }
     
     .form-section {
@@ -781,11 +781,14 @@
 }
 
 body {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Orbitron', 'Exo 2', 'Rajdhani', Rajdhani;
     line-height: 1.6;
-    background: linear-gradient(135deg, #111112 0%, #48444c 100%);
     min-height: 100vh;
     color: #333;
+    background-image: url(https://cdn.cosmos.so/c5f144f6-c315-4bd5-805d-ef65726d002f?format=jpeg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 .container {
@@ -1705,10 +1708,9 @@ nav {
     }
 }
 
+
     
  
-
-
 
 
 
