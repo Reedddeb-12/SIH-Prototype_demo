@@ -8,176 +8,16 @@
     <!-- External Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <!-- Local Stylesheets -->
     <link rel="stylesheet" href="SRC/css/styles.css">
     <link rel="stylesheet" href="SRC/css/components.css">
-    
-    <style>
-        /* Enhanced Hero Box Styling */
-        .hero-content-box {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 25px;
-            padding: 60px 40px;
-            margin: 0 auto;
-            max-width: 900px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-content-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #4296ea, #43aef0);
-        }
-        
-        .hero-content-box h1 {
-            font-size: 4.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #021670, #30039b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: none;
-            line-height: 1.1;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .hero-description {
-            font-size: 1.3rem;
-            color: #495057;
-            margin-bottom: 35px;
-            line-height: 1.6;
-            font-weight: 400;
-        }
-        
-        .hero-cta {
-            background: linear-gradient(45deg, #0e0f0f, #2d048b);
-            color: white;
-            padding: 18px 40px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .hero-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
-        }
-        
-        .hero-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-        
-        .hero-feature {
-            background: rgba(102, 126, 234, 0.1);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            border: 1px solid rgba(102, 126, 234, 0.2);
-        }
-        
-        .hero-feature i {
-            font-size: 2.5rem;
-            color: #667eea;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        .hero-feature h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 8px;
-        }
-        
-        .hero-feature p {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin: 0;
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-content-box {
-                margin: 20px;
-                padding: 40px 30px;
-                border-radius: 20px;
-            }
-            
-            .hero-content-box h1 {
-                font-size: 3rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.4rem;
-            }
-            
-            .hero-description {
-                font-size: 1.1rem;
-            }
-            
-            .hero-features {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero-content-box {
-                margin: 10px;
-                padding: 30px 20px;
-            }
-            
-            .hero-content-box h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.2rem;
-                letter-spacing: 1px;
-            }
-            
-            .hero-cta {
-                padding: 16px 32px;
-                font-size: 1.1rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">
-                <i class="fas fa-flask"></i> THE ALCHEMISTS 
+                THE ALCHEMISTS
             </div>
             <ul class="nav-links">
                 <li><a onclick="showTab('data-entry')">Data Entry</a></li>
@@ -190,38 +30,10 @@
 
     <section class="hero">
         <div class="container">
-            <div class="hero-content-box">
-                <h1>PURE-Intelligence</h1>
-                <div class="hero-subtitle">"Pollution & Utility Risk Evaluation"</div>
-                <p class="hero-description">AI-powered monitoring system for heavy metal water pollutants with advanced health risk prediction and real-time pollution analysis.</p>
-                
-                <button class="hero-cta" onclick="showTab('data-entry')">
-                    <i class="fas fa-play"></i> Start Monitoring
-                </button>
-                
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-brain"></i>
-                        <h4>AI-Powered</h4>
-                        <p>Machine learning disease prediction</p>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h4>Interactive Maps</h4>
-                        <p>Heatmap visualization & location tracking</p>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Real-time Analytics</h4>
-                        <p>Comprehensive pollution analysis</p>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <h4>Health Protection</h4>
-                        <p>Risk assessment & recommendations</p>
-                    </div>
-                </div>
-            </div>
+            <h1>PURE-Intelligence</h1>
+            <p>"Pollution & Utility Risk Evaluation"</p>
+            <p>AI-Powered monitoring for heavy metal water pollutants and health risk prediction</p>
+            <button class="cta-button" onclick="showTab('data-entry')">Start Monitoring</button>
         </div>
     </section>
 
@@ -312,25 +124,17 @@
                 <div class="form-section">
                     <h3><i class="fas fa-upload"></i> Bulk Data Upload</h3>
                     <div class="upload-area" id="upload-area">
-                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
-                        <h4>Drag & drop CSV files here or click to browse</h4>
-                        <p>Supported formats: CSV</p>
-                        <div class="supported-formats">
-                            <span class="format-badge">CSV</span>
-                        </div>
+                        <i class="fas fa-cloud-upload-alt" style="font-size: 3rem; color: #ccc; margin-bottom: 20px;"></i>
+                        <p style="font-size: 1.2rem; margin-bottom: 10px;">Drag & drop CSV files here or click to browse</p>
+                        <p style="color: #666;">Supported formats: CSV</p>
                         <input type="file" id="file-upload" accept=".csv" style="display: none;">
-                        <button class="calculate-btn" onclick="document.getElementById('file-upload').click()">
-                            <i class="fas fa-folder-open"></i> Choose File
+                        <button class="cta-button" style="margin-top: 15px;" onclick="document.getElementById('file-upload').click()">
+                            Choose File
                         </button>
-                        <div class="upload-tools">
-                            <button class="calculate-btn template-btn" onclick="downloadTemplate()">
-                                <i class="fas fa-download"></i> Download Template
-                            </button>
-                            <button class="calculate-btn demo-btn" onclick="loadDemoData()">
-                                <i class="fas fa-play"></i> Load Demo Data
-                            </button>
-                        </div>
                     </div>
+                    <button class="cta-button" onclick="downloadTemplate()" style="margin-top: 15px;">
+                        <i class="fas fa-download"></i> Download Template
+                    </button>
                 </div>
 
                 <div style="text-align: center;">
@@ -469,8 +273,8 @@
 
             <!-- Mapping Tab -->
             <div id="mapping" class="tab-content">
-                <h2>Interactive Pollution Map & Heatmap</h2>
-                <p>Visualize pollution data across different locations with interactive markers, detailed information, and heatmap overlays.</p>
+                <h2>Interactive Pollution Map</h2>
+                <p>Visualize pollution data across different locations with interactive markers and detailed information.</p>
                 <div id="map"></div>
                 
                 <div style="margin-top: 30px;">
@@ -528,8 +332,8 @@
 
             <!-- Analytics Tab -->
             <div id="analytics" class="tab-content">
-                <h2>Advanced Analytics & Insights</h2>
-                <p>Comprehensive analysis and trends in water quality monitoring with exportable reports.</p>
+                <h2>Advanced Analytics</h2>
+                <p>Comprehensive analysis and trends in water quality monitoring.</p>
                 
                 <div class="form-section">
                     <h3><i class="fas fa-chart-area"></i> Pollution Trends</h3>
@@ -546,9 +350,6 @@
                     <div style="text-align: center;">
                         <button class="calculate-btn" onclick="exportResults()">
                             <i class="fas fa-download"></i> Export Data (CSV)
-                        </button>
-                        <button class="calculate-btn" onclick="exportHeatmapData()" style="background: linear-gradient(45deg, #e67e22, #d35400);">
-                            <i class="fas fa-fire"></i> Export Heatmap Data
                         </button>
                         <button class="calculate-btn" onclick="generateReport()" style="background: linear-gradient(45deg, #f39c12, #e67e22);">
                             <i class="fas fa-file-pdf"></i> Generate Report
@@ -573,7 +374,7 @@
             </div>
             <div class="chatbot-messages" id="chatbot-messages">
                 <div class="message bot">
-                    <strong>HMPI Assistant:</strong> Hello! I'm here to help you understand heavy metal pollution and use this application. Ask me about pollution indices, health risks, heatmaps, or how to use any features!
+                    <strong>HMPI Assistant:</strong> Hello! I'm here to help you understand heavy metal pollution and use this application. Ask me about pollution indices, health risks, or how to use any features!
                 </div>
             </div>
             <div class="chatbot-input">
@@ -587,7 +388,6 @@
 
     <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     
@@ -599,66 +399,10 @@
     <script src="SRC/js/charts.js"></script>
     <script src="SRC/js/chatbot.js"></script>
     <script src="SRC/js/main.js"></script>
-    
-    <script>
-        // Global variables
-        let waterQualityData = [];
-        let map = null;
-        let markers = [];
-        let chartInstances = { trends: null, distribution: null };
-
-        // Initialize the application
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set current date
-            document.getElementById('sample-date').value = new Date().toISOString().split('T')[0];
-            
-            // Initialize map when mapping tab is shown
-            setTimeout(() => {
-                if (typeof initializeMap === 'function') {
-                    initializeMap();
-                }
-            }, 100);
-            
-            // Initialize charts
-            if (typeof initializeCharts === 'function') {
-                initializeCharts();
-            }
-            
-            // Load saved data from local storage if available
-            if (typeof loadDataFromLocal === 'function') {
-                loadDataFromLocal();
-            }
-            
-            console.log('PURE-Intelligence System Initialized');
-        });
-
-        // Tab functionality
-        function showTab(tabName) {
-            // Remove active class from all tabs and tab contents
-            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
-            
-            // Add active class to clicked tab
-            event.target.classList.add('active');
-            
-            // Show corresponding tab content
-            const tabContent = document.getElementById(tabName);
-            if (tabContent) {
-                tabContent.style.display = 'block';
-                tabContent.classList.add('active');
-            }
-            
-            // Special handling for map tab
-            if (tabName === 'mapping' && map) {
-                setTimeout(() => map.invalidateSize(), 100);
-            }
-            
-            // Update charts if analytics tab
-            if (tabName === 'analytics' && typeof updateCharts === 'function') {
-                updateCharts();
-            }
-        }
-    </script>
 </body>
 </html>
+  
+
+
+  
 
