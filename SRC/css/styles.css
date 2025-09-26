@@ -434,12 +434,12 @@
     
     .data-table {
         background: #374151;
-        color: var(--text-primary);
+        color:#101010;
     }
     
     .data-table th {
         background: #4a5568;
-        color: var(--text-primary);
+        color:#101010;
     }
 }/* Upload Area */
 .upload-area {
@@ -1711,6 +1711,7 @@ nav {
 
     
  
+
 
 
 
